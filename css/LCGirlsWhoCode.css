@@ -49,6 +49,7 @@ p{
 
 .dropdown:hover .dropbtn{
   color: rgb(90, 90, 90);
+  text-decoration: none;
 }
 
 .search{
