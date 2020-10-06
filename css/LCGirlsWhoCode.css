@@ -9,9 +9,17 @@ p{
   line-height: 1.6em;
 }
 
-.bg{
+.bg1{
   background-image: url("https://convertingcolors.com/plain-F6F6F6.svg");
   height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg2{
+  background-image: url("../images/#7ACAD1.png");
+  height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
