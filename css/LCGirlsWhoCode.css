@@ -67,8 +67,11 @@ p{
 
 .navbar{
   font-family: 'Courier New','Helvetica Neue', sans-serif;
+  position: absolute;
   float: right;
   text-align: center;
+  top: .7em;
+  right: 1em;
 }
 
 .navbar-link{
