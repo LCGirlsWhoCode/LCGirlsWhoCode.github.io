@@ -1,7 +1,8 @@
 body, html {
-  height: 100%;
+  height: 100vh;
   margin: 0;
   background-color: #F6F6F6;
+  overflow: hidden;
 }
 
 p{
@@ -9,7 +10,21 @@ p{
   line-height: 1.6em;
 }
 
-.bg1{
+.container{
+  overflow: scroll;
+  height: 100vh;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+.child{
+  height: 100vh;
+  scroll-snap-align: center;
+  position: relative;
+}
+
+.page1{
   background-image: url("https://convertingcolors.com/plain-F6F6F6.svg");
   height: 100%; 
   background-position: center;
@@ -17,12 +32,18 @@ p{
   background-size: cover;
 }
 
-.bg2{
-  background-image: url("../images/#7ACAD1.png");
+.page2{
+  display: flex;
+  font-size: 3em;
+  font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+}
+
+.page3{
+  font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
+  color: #A0A0A0;
 }
 
 .dropbtn{
@@ -40,7 +61,7 @@ p{
 
 .dropcnt{
   display: none;
-  position: absolute;
+  position: absolute; /*THING*/
   background-color: #F6F6F6;
   min-width: 1em;
 }
@@ -76,18 +97,18 @@ p{
 
 .navbar{
   font-family: 'Courier New','Helvetica Neue', sans-serif;
-  position: absolute;
+  position: absolute; /*THING*/
   float: right;
   text-align: center;
   top: .7em;
   right: 1em;
+  font-size: 1.2em;
 }
 
 .navbar-link{
   text-decoration: none;
   margin-right: 2em;
   color: #A0A0A0;
-  font-size: 1em;
 }
 
 a.navbar-link:hover{
@@ -96,13 +117,20 @@ a.navbar-link:hover{
 
 #header-content{
   font-family: 'Courier New','Helvetica Neue', sans-serif;
-  font-size: 1em;
   text-align: justify;
   color: #A0A0A0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 1.2em;
 }
 
 @media screen and (max-width: 600px){
