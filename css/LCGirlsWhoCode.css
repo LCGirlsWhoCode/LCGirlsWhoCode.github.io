@@ -14,7 +14,6 @@ p{
   overflow: scroll;
   height: 100vh;
   scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
 }
 
@@ -33,12 +32,14 @@ p{
 }
 
 .page2{
-  display: flex;
   font-size: 3em;
   font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
+  color: #F6F6F6;
+  text-align: right;
+  padding-top: 4em;
+  margin-right: .5em;
   height: 100%;
-  background-attachment: fixed;
-  position: absolute;
+  position: relative;
 }
 
 .page3{
@@ -97,7 +98,7 @@ p{
 
 .navbar{
   font-family: 'Courier New','Helvetica Neue', sans-serif;
-  position: absolute; /*THING*/
+  position: absolute;
   float: right;
   text-align: center;
   top: .7em;
