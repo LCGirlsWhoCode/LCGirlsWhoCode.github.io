@@ -43,14 +43,18 @@ p{
 }
 
 .page2{
-  font-size: 3em;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page2-box{
   font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
   color: #F6F6F6;
-  text-align: right;
-  padding-top: 4em;
-  margin-right: .5em;
-  height: 100%;
-  position: relative;
+  font-size: 4em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .page3{
@@ -65,8 +69,6 @@ p{
 
 .dropbtn{
   background-color: #F6F6F6;
-  padding-top: 1em;
-  margin-top: 0px;
   color: #A0A0A0;
   font-family: 'Courier New','Helvetica Neue', sans-serif;
   font-size: 1em;
@@ -105,7 +107,7 @@ p{
 .navbar{
   font-family: 'Courier New','Helvetica Neue', sans-serif;
   position: absolute;
-  float: right;
+  display: flex;
   text-align: center;
   top: .7em;
   right: 1em;
