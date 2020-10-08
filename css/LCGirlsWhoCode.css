@@ -5,6 +5,17 @@ body, html {
   overflow: hidden;
 }
 
+h1{
+  font-size: 1.5em;
+  font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h2{
+  font-size: 1.5em;
+  font-family: "Share Tech Mono", Arial, Helvetica, sans-serif;
+}
+
 p{
   font-size: 1em;
   line-height: 1.6em;
@@ -47,8 +58,15 @@ p{
   color: #A0A0A0;
 }
 
+.calendar-main{
+  margin-top: 5.5em;
+  margin-left: 5em;
+}
+
 .dropbtn{
-  background-color: transparent;
+  background-color: #F6F6F6;
+  padding-top: 1em;
+  margin-top: 0px;
   color: #A0A0A0;
   font-family: 'Courier New','Helvetica Neue', sans-serif;
   font-size: 1em;
@@ -84,18 +102,6 @@ p{
   text-decoration: none;
 }
 
-.search{
-  font-family: "Courier New";
-  font-size: 1em;
-  color: #A0A0A0;
-  background: transparent;
-  background-color: none;
-  outline: none;
-  border-style: hidden hidden solid hidden;
-  border-color: #7ACAD1;
-  border-width: 0.1em;
-}
-
 .navbar{
   font-family: 'Courier New','Helvetica Neue', sans-serif;
   position: absolute;
@@ -114,6 +120,22 @@ p{
 
 a.navbar-link:hover{
   color: rgb(90, 90, 90);
+}
+
+.search{
+  font-family: "Courier New";
+  font-size: 1em;
+  color: #A0A0A0;
+  background: transparent;
+  background-color: none;
+  outline: none;
+  border-style: hidden hidden solid hidden;
+  border-color: #7ACAD1;
+  border-width: 0.1em;
+}
+
+#calendar{
+  overflow: scroll;
 }
 
 #header-content{
@@ -135,17 +157,33 @@ a.navbar-link:hover{
 }
 
 @media screen and (max-width: 600px){
-  .navbar {
-    float: left;
-    display: block;
-    text-align: right;
-    width: 100%;
-    margin: 0px;
+  h1{
+    font-size: 1.3em;
   }
+
+  h2{
+    font-size: 1.3em;
+  }
+
+  .calendar-main{
+    margin-left: 1em;
+    margin-top: 3.5em;
+  }
+
   .dropcnt a{
     margin: 0px;
     padding-top: .7em;
     padding-bottom: .2em;
     background-color: #F6F6F6;
+  }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #F6F6F6;
+    float: left;
+    display: block;
+    text-align: right;
+    width: 100%;
+    margin: 0px;
   }
 }
