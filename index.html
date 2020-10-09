@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -5,42 +7,62 @@
   <link href="../css/LCGirlsWhoCode.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share+Tech+Mono">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <div class="container">
-  <div class="page1" class="child">
-  <div id="header-content" class="child">
-    <p>+ La Cueva High School<br>+ Girls Who <span style="font-size:1.1em; font-family: Courier New; color: #7ACAD1">Code();</span><br>- <input class = "search" type="text" placeholder="Search..."></p>
-  </div> <!--header-content-->
-  <div class = "navbar">
-    <a href="#" class = "navbar-link"><span style="color: rgb(90, 90, 90)">Home</span></span></a>
-    <a href="https://lcgirlswhocode.github.io/calendar/" class = "navbar-link">Calendar</a>
+  <div class="navbar" id="navbar">
+    <a href="javascript:void(0);" class="icon" onclick="navbarFunc()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#">Join Us!</a>
     <div class="dropdown">
-      <button class="dropbtn">Resources</a>
+      <button class="dropbtn">Resources 
+        <i class="fa fa-caret-down"></i>
+      </button>
       <div class="dropcnt">
-        <a data-toggle="collapse" data-target=".navbar-responsive-collapse" href="#" class="navbar-link">Competition</a><br>
-        <a data-toggle="collapse" data-target=".navbar-responsive-collapse" href="#" class="navbar-link">Python</a><br>
-        <a data-toggle="collapse" data-target=".navbar-responsive-collapse" href="#" class="navbar-link">WebDev</a>
+        <a href="#">Competition</a><br>
+        <a href="#">Python</a><br>
+        <a href="#">WebDev</a>
       </div><!--dropcnt-->
-    </div> <!--dropdown-->
-        <a href="#" class = "navbar-link">Join Us!</a>
+    </div><!--dropdown-->
+    <a href="https://lcgirlswhocode.github.io/calendar/">Calendar</a>
+    <a href="#"><span style="color:rgb(90, 90, 90)">Home</span></a>
   </div><!--navbar-->
+
+  <!-- <div class = "navbar">
+    <a href="#" class = "navbar-link"><span style="color: rgb(90, 90, 90)">Home</span></a>
+    <a href="https://lcgirlswhocode.github.io/calendar/" class = "navbar-link">Calendar</a>
+        <a href="#" class = "navbar-link">Join Us!</a>
+  </div> -->
+
   <main>
-  </div><!--page1-->
-  <div style="height:100%;background-color:#7ACAD1" class="child">
-    <div class="page2">
-      <div class="page2-box">
-        <p>Mission statement</p>
-      </div>
-    </div> <!--page2-->
-  </div>
-  <div style="height:100%;background-color:#F6F6F6" class="child">
-    <div class="page3">
-      <p>Who we are:</p>
-    </div> <!--page3-->
-  </div>
-</div><!--container-->
+    <div class="container">
+      <section class="page1" style="height:100%;background-color:#FFFFFF">
+        <div class="child" id="page1">
+          <p>hello world</p>
+        </div> <!--child-->
+      </section><!--page1-->
+      <section class="page2" class="child" style="height:100%;background-color:#7ACAD1">
+        <div class="child">
+        </div>
+      </section> <!--page2-->
+      <section class="page3" class="child" style="height:100%;background-color:#FFFFFF;">
+        <div class="child">
+
+        </div>
+      </section> <!--page3-->
+    </div> <!--container-->
 </main>
+<script>
+  function navbarFunc() {
+  var x = document.getElementById("navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+</script>
 </body>
+</html>
