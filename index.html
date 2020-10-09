@@ -6,7 +6,7 @@
   <title>LCHS Girls Who Code</title>
   <link href="../css/LCGirlsWhoCode.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share+Tech+Mono">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -15,44 +15,43 @@
     <a href="javascript:void(0);" class="icon" onclick="navbarFunc()">
       <i class="fa fa-bars"></i>
     </a>
+    <input type="text" placeholder="Search...">
     <a href="#">Join Us!</a>
     <div class="dropdown">
       <button class="dropbtn">Resources 
         <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropcnt">
-        <a href="#">Competition</a><br>
-        <a href="#">Python</a><br>
+        <a href="#">Competition</a>
+        <a href="#">Python</a>
         <a href="#">WebDev</a>
       </div><!--dropcnt-->
     </div><!--dropdown-->
     <a href="https://lcgirlswhocode.github.io/calendar/">Calendar</a>
+    <a href="#" name="page2">Mission Statement</a>
+    <a href="#">About</a>
     <a href="#"><span style="color:rgb(90, 90, 90)">Home</span></a>
   </div><!--navbar-->
-
-  <!-- <div class = "navbar">
-    <a href="#" class = "navbar-link"><span style="color: rgb(90, 90, 90)">Home</span></a>
-    <a href="https://lcgirlswhocode.github.io/calendar/" class = "navbar-link">Calendar</a>
-        <a href="#" class = "navbar-link">Join Us!</a>
-  </div> -->
-
-  <main>
-    <div class="container">
-      <section class="page1" style="height:100%;background-color:#FFFFFF">
-        <div class="child" id="page1">
-          <p>hello world</p>
-        </div> <!--child-->
-      </section><!--page1-->
-      <section class="page2" class="child" style="height:100%;background-color:#7ACAD1">
-        <div class="child">
-        </div>
-      </section> <!--page2-->
-      <section class="page3" class="child" style="height:100%;background-color:#FFFFFF;">
-        <div class="child">
-
-        </div>
-      </section> <!--page3-->
-    </div> <!--container-->
+<main>
+<div class="container">
+  <section class="page1" style="height:100%;background-color:#FFFFFF">
+    <div class="child" id="page1">
+      <p>+ La Cueva High School <br>+ Girls Who <span style="color:#7ACAD1; font-size: 1.2em">Code();</span></p>
+    </div> <!--child-->
+  </section><!--page1-->
+  <section class="page2 child" style="height:100%;background-color:#7ACAD1">
+    <div class="child" id="page2">
+      <p>Mission Statement</p>
+    </div>
+  </section> <!--page2-->
+  <section class="page3 child" style="height:100%;background-color:#FFFFFF;">
+    <div class="child" id="page3">
+      <h1>Who are we?</h1>
+      <p>Welcome to La Cueva's Girls Who Code chapter!<br>Our chapter focuses on exploring the various fields of computer science, learning new programming languages, and working on interesting coding projects.</p>
+      <button class="button" onclick="window.location.href='#'"><span>Join Us! </span></button>
+    </div>
+  </section> <!--page3-->
+</div> <!--container-->
 </main>
 <script>
   function navbarFunc() {
