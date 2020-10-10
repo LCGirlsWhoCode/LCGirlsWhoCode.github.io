@@ -44,8 +44,8 @@ p{
   font-size: 1em;
   line-height: 1.6em;
   color: #2B2B2B;
-  font-family: "Work Sans ", Arial, Helvetica, sans-serif;
-  font-weight: 100;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
 }
 
 .button span:after {
@@ -76,11 +76,6 @@ p{
   width: 100vw;
   scroll-snap-align: start;
   position: relative;
-}
-
-.calendar-main{
-  margin-top: 5.5em;
-  margin-left: 5em;
 }
 
 .dropdown{
@@ -182,6 +177,13 @@ p{
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
   font-weight: 300;
   font-size: 1em;
+  margin-left: 23em;
+  margin-right: 23em;
+}
+
+.subpages{
+  margin-top: 5.5em;
+  margin-left: 8.5em;
 }
 
 #calendar{
@@ -213,6 +215,10 @@ p{
   font-weight: 400;
 }
 
+#join-us{
+  overflow: scroll;
+}
+
 ::selection{
   background: #7ACAD1;
   color: white;
@@ -227,9 +233,9 @@ p{
     font-size: 1.8em;
   }
 
-  .calendar-main{
-    margin-left: 1em;
-    margin-top: 3.5em;
+  .page3 p{
+    margin-left: 9em;
+    margin-right: 9em;
   }
 
   .navbar a:not(:first-child), .dropdown .dropbtn {
@@ -257,5 +263,10 @@ p{
     display: block;
     width: 100%;
     text-align: left;
+  }
+
+  .subpages{
+    margin-left: 3.5em;
+    margin-top: 3.5em;
   }
 }
