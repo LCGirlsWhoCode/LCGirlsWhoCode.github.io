@@ -1,3 +1,15 @@
+a {
+  text-decoration: none;
+  color: #7ACAD1;
+}
+a:hover{
+  text-decoration: underline;
+}
+a:visited{
+  text-decoration: none;
+  color: #7ACAD1;
+}
+
 body, html {
   height: 100vh;
   margin: 0; 
