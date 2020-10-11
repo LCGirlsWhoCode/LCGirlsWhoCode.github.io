@@ -30,10 +30,10 @@
         <a href="https://lcgirlswhocode.github.io/">Home</a>
       </div><!--navbar-->
 <main>
-    <h1 class="un-main"><span style="margin-left:0em;">Interested in joining?</span></h1>
-    <form id="contactForm"><!--SPENT 3 HOURS WORKING ON THIS FORM EXPECTING IT TO EMAIL ME AND GITHUB DOESN'T SUPPORT PHP RARRRRGHHHHHHHHHHH-->
-        <p><label for="name">Full Name</label><br><!--yes, 3 hours, i'm a n00b, got it???-->
-        <input type="text" for="name" placeholder="Enter Your Name" required></p><!--#stillSalty-->
+    <h1 class="un-main" id="interested-in"><span style="margin-left:0em;">Interested in joining?</span></h1>
+    <form id="contactForm" action="https://formspree.io/f/mvovzjjk" method="POST"><!--SPENT HOURS WORKING ON THIS FORM EXPECTING IT TO EMAIL ME AND GITHUB DOESN'T SUPPORT PHP RARRRRGHHHHHHHHHHH-->
+        <p><label for="name">Full Name</label><br> <!--using formspree as a temporary before I learn backend (10.10.2020) and migrate to firebase webhosting-->
+        <input type="text" for="name" placeholder="Enter Your Name" required></p>
         <p><label for="email">Email</label><br>
         <input type="text" for="email" placeholder="Enter Your Email" required></p>
         <div>
@@ -88,14 +88,10 @@
         </div><!--for another div-->
         <p><label for="else">Anything else you would like us to know?</label><br>
         <input type="text" for="else"></p>
-        <button class="button" onclick="clear()"><span>Submit</span></button>
+        <button class="button" onclick="submitted()" type="submit"><span>Submit</span></button>
     </form>
 </main>
 <script>
-    function clear(){
-        document.getElementById("contactForm").reset();
-    }
-    
     function navbarFunc() {
       var x = document.getElementById("navbar");
       if (x.className === "navbar") {
@@ -103,6 +99,12 @@
       } else {
         x.className = "navbar";
       }
+    }
+
+    function submitted(){
+        document.getElementById("interested-in").innerHTML = "Thanks for joining! We'll email you back. See you next meeting!";
+        document.getElementById("contactForm").style.visibility="hidden";
+        document.getElementById("contactForm").reset();
     }
   </script>
 </body>
