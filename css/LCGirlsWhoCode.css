@@ -19,9 +19,10 @@ body, html {
 }
 
 main{
-  margin-top: 5.5em;
-  margin-left: 3.5em;
-  margin-bottom: 5.5em;
+  margin-top: 4em;
+  margin-left: 6em;
+  margin-right: 6em;
+  margin-bottom: 3.5em;
 }
 
 button{
@@ -111,6 +112,13 @@ p{
   width: 100vw;
   scroll-snap-align: start;
   position: relative;
+}
+
+.checkboxes{
+  background-color: none;
+}
+.checkboxes input{
+  cursor: pointer;
 }
 
 .dropdown{
@@ -216,8 +224,10 @@ p{
   margin-right: 23em;
 }
 
-.centered{
+.un-main{
+  margin-top: 0em;
   margin-left: 0em;
+  margin-bottom: 0em;
 }
 
 #page1{
@@ -251,14 +261,16 @@ p{
 }
 
 @media screen and (max-width: 900px){
-  body{
-    margin-top: 3.5em;
-    margin-left: 3.5em;
-  }
-
   h1{font-size: 1.3em;}
 
   h2{font-size: 1.3em;}
+
+  main{
+    margin-top: 3.5em;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    margin-bottom: 2em;
+  }
 
   .page1{
     font-size: 1.8em;
