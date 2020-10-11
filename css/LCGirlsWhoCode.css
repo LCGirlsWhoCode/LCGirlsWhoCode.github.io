@@ -9,6 +9,9 @@ a:visited{
   text-decoration: none;
   color: #7ACAD1;
 }
+a:active{
+  color: rgb(90, 90, 90);
+}
 
 body, html {
   height: 100vh;

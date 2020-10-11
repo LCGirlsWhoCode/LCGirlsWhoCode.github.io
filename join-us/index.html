@@ -15,7 +15,7 @@
           <i class="fa fa-bars"></i>
         </a>
         <input type="text" placeholder="Search...">
-        <a href="#"><span style="color:rgb(90, 90, 90)">Join Us!</span></a>
+        <a href="#">Join Us!</a>
         <a href="https://lcgirlswhocode.github.io/calendar/">Calendar</a>
         <div class="dropdown">
           <button class="dropbtn">Resources 
@@ -31,10 +31,22 @@
       </div><!--navbar-->
 <main id="join-us">
     <p class="subpages">Interested in joining?</p>
-    <h1 class="subpages-center">Contact Form:</h1>
-    <div class="contact-form">
-        
-    </div>
+    <h1>Contact Form:</h1>
+    <form>
+        <label for="name">Full Name</label> <br>
+        <input type="text" for="name" placeholder="Enter Your Name" required> <br>
+        <label for="email">Email</label> <br>
+        <input type="text" for="email" placeholder="Enter Your Email" required> <br>
+        <p>What is your experience in programming? (Select all that apply)<p> <br>
+        <label class="checkbox"> Beginner (welcome!)
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label> <br>
+        <label class="checkbox"> Block-coding languages (Scratch, MIT App Inventor, Alice)
+            <input type="checkbox">
+            <span class="checkmark"></span>
+        </label>
+    </form>
 </main>
 <script>
     function navbarFunc() {
