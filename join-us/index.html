@@ -30,22 +30,64 @@
         <a href="https://lcgirlswhocode.github.io/">Home</a>
       </div><!--navbar-->
 <main id="join-us">
-    <p class="subpages">Interested in joining?</p>
-    <h1>Contact Form:</h1>
-    <form>
-        <label for="name">Full Name</label> <br>
-        <input type="text" for="name" placeholder="Enter Your Name" required> <br>
-        <label for="email">Email</label> <br>
-        <input type="text" for="email" placeholder="Enter Your Email" required> <br>
-        <p>What is your experience in programming? (Select all that apply)<p> <br>
-        <label class="checkbox"> Beginner (welcome!)
-            <input type="checkbox">
-            <span class="checkmark"></span>
-        </label> <br>
-        <label class="checkbox"> Block-coding languages (Scratch, MIT App Inventor, Alice)
-            <input type="checkbox">
-            <span class="checkmark"></span>
-        </label>
+    <h1 class="centered">Interested in joining?</h1>
+    <form class="sub-subpages">
+        <p><label for="name">Full Name</label> <br>
+        <input type="text" for="name" placeholder="Enter Your Name" required></p>
+        <p><label for="email">Email</label> <br>
+        <input type="text" for="email" placeholder="Enter Your Email" required></p>
+        <div>
+            <p>What is your experience in programming? (Select all that apply)<br>
+            <label class="checkbox">
+                <input type="checkbox">Beginner (welcome!)
+                <span class="checkmark"></span>
+            </label><br>
+            <label class="checkbox"> 
+                <input type="checkbox">Block-coding languages (Scratch, MIT App Inventor, Alice)
+                <span class="checkmark"></span>
+            </label><br>
+            <label class="checkbox">
+                <input type="checkbox">Web Development (XML, JavaScript, Ruby, CSS, HTML)
+                <span class="checkmark"></span>
+            </label><br>
+            <label class="checkbox">
+                <input type="checkbox">Java, Python, C++
+                <span class="checkmark"></span>
+            </label><br>
+            <label class="checkbox">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+                <label for="other">Other</label>
+            <input type="text" for="other"></p>
+        </div><!--for the div above-->
+        <div>
+            <p>What are your expectations for joining this club? (Select all that apply)<br>
+            <label class="checkbox">
+                <input type="checkbox">Improve my programming skills
+                <span class="checkmark"></span>
+            </label><br>
+            <label class="checkbox">
+                <input type="checkbox">Learn a new coding language
+                <span class="checkmark"></span>
+            </label><br>
+            <label class="checkbox">
+                <input type="checkbox">Participate in competitive coding competitions and hackathons
+                <span class="checkmark"></span>
+            </label><br>
+            <label class="checkbox">
+                <input type="checkbox">Create a project (individual or team)
+                <span class="checkmark"></span>
+            </label><br>
+            <label class="checkbox">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+                <label for="other">Other</label>
+            <input type="text" for="other"></p>
+        </div><!--for another div-->
+        <p><label for="else">Anything else you would like us to know?</label><br>
+        <input type="text" for="else"></p>
     </form>
 </main>
 <script>

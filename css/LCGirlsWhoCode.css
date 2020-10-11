@@ -16,7 +16,12 @@ a:active{
 body, html {
   height: 100vh;
   margin: 0; 
-  overflow: hidden;
+}
+
+main{
+  margin-top: 5.5em;
+  margin-left: 3.5em;
+  margin-bottom: 5.5em;
 }
 
 button{
@@ -53,6 +58,21 @@ h2{
   font-size: 1.5em;
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
   color: #2B2B2B;
+}
+
+input[type=text]{
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  color: #2B2B2B;
+  background: transparent;
+  background-color: none;
+  outline: none;
+  border-style: hidden hidden solid hidden;
+  border-color: #7ACAD1;
+  border-width: .1em;
+  margin-top: .3em;
+  margin-bottom: 1em;
 }
 
 p{
@@ -196,13 +216,8 @@ p{
   margin-right: 23em;
 }
 
-.subpages{
-  margin-top: 5.5em;
-  margin-left: 8.5em;
-}
-
-#calendar{
-  overflow: scroll;
+.centered{
+  margin-left: 0em;
 }
 
 #page1{
@@ -230,16 +245,17 @@ p{
   font-weight: 400;
 }
 
-#join-us{
-  overflow: scroll;
-}
-
 ::selection{
   background: #7ACAD1;
   color: white;
 }
 
 @media screen and (max-width: 900px){
+  body{
+    margin-top: 3.5em;
+    margin-left: 3.5em;
+  }
+
   h1{font-size: 1.3em;}
 
   h2{font-size: 1.3em;}
@@ -278,10 +294,5 @@ p{
     display: block;
     width: 100%;
     text-align: left;
-  }
-
-  .subpages{
-    margin-left: 3.5em;
-    margin-top: 3.5em;
   }
 }
