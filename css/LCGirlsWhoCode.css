@@ -16,7 +16,7 @@ a:active{
 body, html {
   height: 100vh;
   margin: 0;
-  overflow: auto;
+  overflow: hidden;
 }
 
 main{
