@@ -1,0 +1,48 @@
+@media screen and (max-width: 900px){
+    h1{font-size: 1.2em;}
+  
+    h2{font-size: 1.2em;}
+  
+    main{
+      margin-top: 3.5em;
+      margin-left: 3.5em;
+      margin-right: 3.5em;
+      margin-bottom: 2em;
+    }
+  
+    .page1{
+      font-size: 1.8em;
+    }
+  
+    .page3 p{
+      margin-left: 9em;
+      margin-right: 9em;
+    }
+  
+    .navbar a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .navbar a.icon{
+      float: right;
+      display: block;
+    }
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a{
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  
+    .navbar.responsive .dropdown {float: none;}
+    .navbar.responsive .dropcnt {position: relative;}
+    .navbar.responsive .dropdown .dropbtn{
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
