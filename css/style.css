@@ -69,7 +69,7 @@ h3{
 h4{
   font-size: 1em;
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
-  color: #757171;
+  color: #828282;
 }
 input[type=text]{
   font-family: "Work Sans", Arial, Helvetica, sans-serif;
@@ -90,7 +90,7 @@ p{
   font-size: 1em;
   line-height: 1.6em;
   color: #2B2B2B;
-  font-weight: 300;
+  font-weight: 250;
 }
 
 .button span:after {
