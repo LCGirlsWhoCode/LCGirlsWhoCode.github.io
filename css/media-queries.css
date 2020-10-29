@@ -26,11 +26,13 @@
       float: right;
       display: block;
     }
-    .navbar.responsive {position: relative;}
     .navbar.responsive .icon{
       position: absolute;
       right: 0;
       top: 0;
+    }
+    .navbar.responsive input[type=text]{
+      display: none;
     }
     .navbar.responsive a{
       float: none;
