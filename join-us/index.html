@@ -11,25 +11,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="navbar" id="navbar">
-        <a href="javascript:void(0);" class="icon" onclick="navbarFunc()">
-          <i class="fa fa-bars"></i>
-        </a>
-        <input type="text" placeholder="Search...">
-        <a href="#">Join Us!</a>
-        <a href="https://lcgirlswhocode.github.io/calendar/">Calendar</a>
-        <div class="dropdown">
-          <button class="dropbtn">Resources 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropcnt">
-            <a href="#">Competition</a><br>
-            <a href="#">Python</a><br>
-            <a href="#">WebDev</a><br>
-          </div><!--dropcnt-->
-        </div><!--dropdown-->
-        <a href="https://lcgirlswhocode.github.io/">Home</a>
-      </div><!--navbar-->
+  <!--NAVBAR-->
+  <div id="nav-placeholder"></div>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+  </script>
+  <!--END NAVBAR-->
 <main>
     <h1 class="un-main" id="interested-in"><span style="margin-left:0em;">Interested in joining?</span></h1>
     <form id="contactForm" action="https://formspree.io/f/mvovzjjk" method="POST">
@@ -93,15 +82,6 @@
     </form>
 </main>
 <script>
-    function navbarFunc() {
-      var x = document.getElementById("navbar");
-      if (x.className === "navbar") {
-        x.className += " responsive";
-      } else {
-        x.className = "navbar";
-      }
-    }
-
     function submitted(){
         document.getElementById("interested-in").innerHTML = "Thanks for joining! We'll email you back. See you next meeting!";
         document.getElementById("contactForm").style.visibility="hidden";

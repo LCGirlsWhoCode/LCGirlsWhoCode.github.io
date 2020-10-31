@@ -8,29 +8,18 @@
   <link href="./css/media-queries.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-  <div class="navbar" id="navbar"> <!--at some point, i will learn JS and this navbar will be everywhere-->
-    <a href="javascript:void(0);" class="icon" onclick="navbarFunc()"><!--so this copypaste is temporary (10.10.2020)-->
-      <i class="fa fa-bars"></i>
-    </a>
-    <input type="text" placeholder="Search...">
-    <a href="https://lcgirlswhocode.github.io/join-us/">Join Us!</a>
-    <a href="https://lcgirlswhocode.github.io/calendar/">Calendar</a>
-    <div class="dropdown">
-      <button class="dropbtn">Resources 
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropcnt">
-        <a href="https://lcgirlswhocode.github.io/resources/competitions/">Competition</a><br>
-        <a href="https://lcgirlswhocode.github.io/resources/python/">Python</a><br>
-        <a href="https://lcgirlswhocode.github.io/resources/webdev/">WebDev</a><br>
-      </div><!--dropcnt-->
-    </div><!--dropdown-->
-    <a href="#">Home</a>
-  </div><!--navbar-->
+  <!--NAVBAR-->
+  <div id="nav-placeholder"></div>
+  <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+  </script>
+  <!--END NAVBAR-->
 <main class="un-main">
 <div>
   <div class="page1">
@@ -48,16 +37,6 @@
   </section> <!--page3-->
 </div> <!--container-->
 </span></main>
-<script>
-  function navbarFunc() {
-    var x = document.getElementById("navbar");
-    if (x.className === "navbar") {
-      x.className += " responsive";
-    } else {
-      x.className = "navbar";
-    }
-  }
-</script>
   
 </body>
 </html>
