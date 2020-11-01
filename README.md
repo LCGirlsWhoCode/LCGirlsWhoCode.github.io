@@ -4,7 +4,8 @@ This repository is for the LC Girls Who Code website. It's currently in progress
 
 <h2>URL</h2>
   <p>(☞ﾟヮﾟ)☞ <a href="https://lcgirlswhocode.github.io" target="_blank">lcgirlswhocode.github.io</a> Please report any bugs not listed in <b>issues</b> or below.</p>
-  <p>Possible issues: </p>
+
+<h2>Possible issues</h2>
   <ul>
     <li>Probably doesn't support IE ._.
     <li>Join Us form may or may not send an email to us (GitHub Pages does not support PHP, so I used formspree)
