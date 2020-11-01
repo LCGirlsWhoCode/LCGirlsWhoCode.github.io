@@ -106,6 +106,7 @@ ul{
   color: #2B2B2B;
   font-weight: 300;
 }
+ul li{padding: .15em 0em;}
 
 .button span:after {
   content: '\00bb';
@@ -268,9 +269,18 @@ ul{
   margin: 0em;
 }
 
-.semicolon{
+.semicolon{/*on the home page: Code(); to make it blue*/
   color:#7ACAD1;
   font-size: 1.1em;
+}
+
+.sticky{/*for the sticky navbar*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content{
+  padding-top: 3.75em;
 }
 
 ::selection{
