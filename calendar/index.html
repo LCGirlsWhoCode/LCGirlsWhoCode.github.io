@@ -11,81 +11,86 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
-<body>
+<nav>
   <!--NAVBAR-->
   <div id="nav-placeholder"></div>
   <script>
     $(function(){
-      $("#nav-placeholder").load("../nav.html");
+      $("#nav-placeholder").load("../../nav.html");
     });
   </script>
   <!--END NAVBAR-->
-    <main class="subpages">
-        <h1>2020</h1>
+</nav>
+<body>
+  <main class="subpages">
+    <h1>2020</h1>
+      <div class="p-section" tabindex=1> <!--tabindex allows the user to "tab" through the page. the numbers specify the order-->
         <h2>August</h2>
+      </div>
+      <div class="p-section" tabindex=2>
         <h2>September</h2>
+      </div>
+      <div class="p-section" tabindex=3>
         <h2>October</h2>
-            <p>
-            <ul>
-                <h3>10/18 - NMHack Event</h3> 
-                <ul>
-                <h4>First NMHack event hosted by UNM</h4>
-                </ul>
-                <h3>10/22 - Webinar with New York Tech Students</h3>
-                <h3>10/31 - Young Women in Computing (YWIC)</h3>
-                <ul>
-                    <h4>Cybersecurity workshop</h4>
-                </ul>
-            </ul>
-        </p>
+          <div class="indent2">
+            <p><b>10/18 - NMHack Event</b> <br> First NMHack event hosted by UNM</p>
+            <p><b>10/22 - Webinar with New York Tech Students</b></p>
+            <p><b>10/31 - Young Women in Computing (YWIC)</b></p>
+            <p><b>Cybersecurity workshop</b></p>
+          </div>
+      </div>
+      <div class="p-section" tabindex=4>
         <h2>November</h2>
-           <p>
-    <ul>
-                <h3>11/4 - Data Anaylsis Workshop - 1</h3>
-                <h3>11/7 - Young Women in Computing (YWIC) - 1</h3>
-                <h3>11/11 - Data Anaylsis Workshop - 2</h3>
-                <h3>11/14 - Young Women in Computing (YWIC) - 2</h3>
-                <h3>11/18 - Data Anaylsis Workshop - 3</h3>
-                <h3>11/21 - Young Women in Computing (YWIC) - 3</h3>
-             </ul>
-        </p>
+          <div class="indent2">
+            <p><b>11/4 - Data Anaylsis Workshop - 1</b></p>
+            <p><b>11/7 - Young Women in Computing (YWIC) - 1</b></p> 
+            <p><b>11/11 - Data Anaylsis Workshop - 2</b></p>
+            <p><b>11/14 - Young Women in Computing (YWIC) - 2</b></p>
+            <p><b>11/18 - Data Anaylsis Workshop - 3</b></p>
+            <p><b>11/21 - Young Women in Computing (YWIC) - 3</b></p>
+          </div>
+      </div>
+      <div class="p-section" tabindex=5>
         <h2>December</h2>
-            <p>
-                <ul>
-                <h3>TBD - 1st USACO Competition</h3>
-                </ul>
-            </p>
-        <h1>2021</h1>
+          <div class="indent2">
+            <p><b>TBD - 1st USACO Competition</b></p>
+          </div>
+      </div>
+    <h1>2021</h1>
+      <div class="p-section" tabindex=6>
         <h2>Janurary</h2>
-            <p>
-            <ul>
-                <h3>TBD - 2nd USACO Competition</h3>
-        </ul>
-        </p>    
+          <div class="indent2">
+            <p><b>TBD - 2nd USACO Competition</b></p>
+          </div>
+      </div>
+      <div class="p-section" tabindex=7>
         <h2>Februrary</h2>
-        <p>        
-        <ul>
-                <h3>TBD - 3rd USACO Competition</h3>
-        </ul>
-        </p>
+          <div class="indent2">
+            <p><b>TBD - 3rd USACO Competition</b></p>
+          </div>
+      </div>
+      <div class="p-section" tabindex=8>
         <h2>March</h2>
-        <p>
-        <ul>
-                <h3>TBD - 4th USACO Competition</h3>
-        </ul>
-        </p>
+          <div class="indent2">
+            <p><b>TBD - 4th USACO Competition</b></p>
+          </div>
+      </div>
+      <div class="p-section" tabindex=9>
         <h2>April</h2>
+      </div>
+      <div class="p-section" tabindex=10>
         <h2>May</h2>
-    </main>
-    <script>
-        function navbarFunc() {
-        var x = document.getElementById("navbar");
-        if (x.className === "navbar") {
-          x.className += " responsive";
-        } else {
-          x.className = "navbar";
-        }
+      </div>
+  </main>
+  <script>
+      function navbarFunc() {
+      var x = document.getElementById("navbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
       }
-      </script>
+    }
+    </script>
 </body>
 </html>

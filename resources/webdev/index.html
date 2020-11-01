@@ -7,24 +7,83 @@
     <link href="../../css/style.css" rel="stylesheet" type="text/css"> 
     <link href="../../css/media-queries.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Prompt">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
+<nav>
+    <!--NAVBAR-->
+    <div id="nav-placeholder"></div>
+    <script>
+      $(function(){
+        $("#nav-placeholder").load("../../nav.html");
+      });
+    </script>
+    <!--END NAVBAR-->
+</nav>
 <body>
-  <!--NAVBAR-->
-  <div id="nav-placeholder"></div>
-  <script>
-    $(function(){
-      $("#nav-placeholder").load("../../nav.html");
-    });
-  </script>
-  <!--END NAVBAR-->
   <main class="subpages">
     <h1>Web Development</h1>
-    <h2>HTML</h2>
-    <h2></h2>CSS</h2>
-
+    <div>
+      <h2>Front End</h2><!--dividing sections into frontend and backend-->
+      <div class="p-section indent2" tabindex=1>
+        <h3>HTML</h3>
+          <p>
+            HTML (HyperText Markup Language) is the standard markup language for documents designed to be displayed in a web browser.  It can be assisted by CSS and JavaScript.
+            <ul>
+              <li><a target=_blank href="https://www.w3schools.com/html/">W3Schools</a>: A beginner tutorial for HTML, but it's more recommended to use it as a supplementary resource. W3Schools has a lot of examples, so it's easy for quickly looking up how to do something.</li>
+              <li><a target=_blank href="https://www.freecodecamp.org/learn">Free Code Camp</a>: Offers a course specifically for responsive and accesibility web development.</li>
+              <li><a target=_blank href="https://www.khanacademy.org/computing/computer-programming/html-css">Khan Academy</a>: Khan Academy's beginner webpages tutorial video, document, and interactive tutorials for both HTML and CSS.</li>
+            </ul>
+          </p>
+      </div>
+      <div class="p-section indent2" tabindex=2>
+        <h3>CSS</h3>
+          <p>
+            Cascading Style Sheets (CSS) is a style sheet language used for stylizing the presentation of a document written in a markup language such as HTML. Stylization includes font, color, object size, and so on.
+            <ul>
+              <li><a target=_blank href="https://www.w3schools.com/css/">W3Schools</a>: A beginner tutorial for CSS, but it's better used as a supplemental resource. W3Schools has a lot of examples, so it's easy for quickly looking up how to do something.</li>
+              <li><a target=_blank href="https://www.khanacademy.org/computing/computer-programming/html-css">Khan Academy</a>: Khan Academy's beginner webpages tutorial video, document, and interactive tutorials for both HTML and CSS.</li>
+            </ul>
+          </p>
+      </div>
+      <div class="p-section indent2" tabindex=3>
+        <h3>JavaScript</h3>
+        <p>
+          JavaScript (JS) is a programming scripting language that can make a website interactive and dynamic. JavaScript can be used for both frontend and backend developing.
+          <ul>
+            <li><a target=_blank href="https://www.w3schools.com/js/DEFAULT.asp">W3Schools</a>: W3Schools supplies a JavaScript tutorial and many examples.</li>
+            <li><a target=_blank href="https://www.khanacademy.org/computing/computer-programming/programming">Khan Academy JS</a>: An introduction to JavaScript, which is the prerequisite for the HTML DOM tutorial below, as well as the JQuery tutorial.</li>
+            <li><a target=_blank href="https://www.khanacademy.org/computing/computer-programming/html-css-js">Khan Academy Interactivity</a>: A tutorial for using JavaScript to make a webpage interactive using HTML Document Object Model (DOM).</li>
+            <li><a target=_blank href="https://www.w3schools.com/js/js_htmldom.asp">W3Schools DOM</a>: W3Schools also offers a JavaScript HTML Dom tutorial. However, it's more recommended to use Khan Academy's course to learn HTML DOM, and W3Schools to quickly search up certain methods.</li>
+            <li><a target=_blank href="https://www.khanacademy.org/computing/computer-programming/html-js-jquery">Khan Academy jQuery</a>: jQuery is a JavaScript library that simplifies HTML JavaScript DOM. Khan Academy has an interacvie video tutorial course on jQuery.</li>
+            <li><a target=_blank ref="https://www.w3schools.com/jquery/">W3Schools jQuery</a>: Again, W3Schools also has a tutorial, but it's better to use it to support the Khan Academy course.</li>
+          </ul>
+        </p>
+      </div>
+    </div><!--END RESOURCES-FRONTEND-->
+    <div id="resources-backend">
+      <h2>Back End</h2>
+      <div class="p-section indent2" tabindex=4>
+        <h3>PHP</h3>
+          <p>
+            PHP is one of the many server-side languages websites are built with. Many large websites and web apps, such as Yahoo, Facebook, Wikipedia, Wordpress, and Tumblr are developed PHP.<br>
+            <ul>
+              <li><a target=_blank href="https://laracasts.com/series/php-for-beginners">Laracasts</a>: A video course that serves as an introduction to PHP.</li>
+              <li><a target=_blank href="https://phpenthusiast.com/object-oriented-php-tutorials/create-classes-and-objects">PHP Enthusiast</a>: A more in-depth tutorial.</li>
+            </ul>
+          </p>
+      </div>
+      <div class="p-section indent2" tabindex=5>
+        <h3>Ruby (on Rails)</h3>
+        <p>
+          Ruby on Rails is a web application framework for Ruby, and is used to develop backend. Examples of websites and apps that use Ruby on Rails are Twitter, Hulu, GitHub, SlideShare, and Shopify. <br>
+          <ul>
+            <li><a target=_blank href="https://girlswhocode.com/programs/code-at-home">Codecademy</a>: A series of interactive tutorials.</li>
+          </ul>
+        </p>
+      </div>
+    </div><!--END RESOURCES-BACKEND-->
   </main>
 </body>
 </html>
