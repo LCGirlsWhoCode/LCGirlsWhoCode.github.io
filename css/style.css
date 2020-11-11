@@ -289,3 +289,64 @@ ul li{padding: .15em 0em;}
 }
 
 /* :focus {outline: none;} */ /*not sure if i want the focus outline*/
+
+
+/*HAPPY BIRTHDAY STUFF*/
+.birthday-page{
+  background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+.birthday-text{
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  line-height: 1.3em;
+  color: #EEEEEE;
+  font-size: 3em;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  margin-bottom: .2em;
+}
+.birthday-center{
+  padding-left: 30vw;
+  padding-right: auto;
+}
+
+#bday-button{
+  color: #EEEEEE;
+  border: solid;
+  border-color: #EEEEEE;
+  background-color: transparent;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.7em;
+  border: solid;
+  border-width: .08em;
+  padding: .3em .45em;
+  border-radius: 2px;
+}
+#bday-button:hover{
+  cursor: pointer;
+}
+#bday-button span{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+#bday-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+#bday-button:hover span {
+  padding-right: 25px;
+}
+#bday-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
