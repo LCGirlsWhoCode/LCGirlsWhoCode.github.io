@@ -233,7 +233,7 @@ ul li{padding: .15em 0em;}
 .page2{
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   background-color:#7ACAD1;
   font-size: 4em;
   align-items: center;
